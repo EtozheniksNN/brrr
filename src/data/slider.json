@@ -1,0 +1,17 @@
+[
+  {
+    "img": "./assets/images/testimonial-1.jpg",
+    "description": "\"Очень культурные и клиент-ориентированные администраторы. Топовый контент по низкой цене\"",
+    "name": "SUSAN SIMS, INTERACTION DESIGNER AT XYZ"
+  },
+  {
+    "img": "./assets/images/testimonial-2.jpg",
+    "description": "\"Множество уникальных снимков, на некоторые места начинаешь смотртеь по-другому. Очень приятная администрация\"",
+    "name": "SUSAN SIMS, web developer in FREECODE"
+  },
+  {
+    "img": "./assets/images/builder.jpg",
+    "description": "\"А что я тут забыл?\"",
+    "name": "BUILDER IN POLAND"
+  }
+]

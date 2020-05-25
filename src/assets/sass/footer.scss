@@ -1,0 +1,129 @@
+@import "breakpoints";
+
+footer > div {
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 22.4px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #e84545;
+}
+
+footer .fa-heart {
+  color: #e84545;
+  font-size: 11px;
+  margin: 0 2px;
+}
+
+// footer top
+
+.footerTopContainer {
+  padding-top: 55px;
+  padding-bottom: 80px;
+  background: #3a3e64;
+}
+
+.footerTopContainer > .container {
+  margin: 0 auto;
+  display: flex;
+}
+
+.footerTopItem {
+  width: 33.3333%;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.footerTopItem > h5 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+@media screen and (max-width: $grid-large) {
+  .footerTopContainer {
+    padding-bottom: 0;
+  }
+
+  .footerTopContainer > .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerTopItem {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+// footer bottom
+
+.footerBottomContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #313454;
+  padding: 20px 0 25px 0;
+}
+
+// social
+
+.shareLinks {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.shareLinks > li {
+  display: inline-block;
+}
+
+.shareLinks > li:hover a {
+  background: #E84545;
+  border-color: #E84545;
+  color: #fff;
+}
+
+.shareLinks > li + li {
+  margin-left: 5px;
+}
+
+.shareLinks > li > a {
+  padding: 10px;
+  border-radius: 2px;
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 5px;
+  text-align: center;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teamShareLinks {
+  margin-top: 30px;
+  justify-content: left;
+}
+
+.teamShareLinks > li > a {
+  color: #C6CACC;
+  border: 1px solid #e8ecee;
+}
+
+.footerShareLinks > li > a {
+  color: #fff;
+  border: 2px solid #fff;
+}

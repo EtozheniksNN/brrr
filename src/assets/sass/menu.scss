@@ -1,0 +1,219 @@
+@import "breakpoints";
+
+nav {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.container {
+  max-width: 1170px;
+}
+
+.navigationContainer {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 40px 0;
+  transition: padding 0.3s;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navFixed {
+  background-color: #292c47;
+}
+
+.navFixed > .navigationContainer {
+  background-color: #292c47;
+  border-bottom: 0;
+  padding: 25px 0;
+}
+
+.navigationContainer > ul {
+  display: flex;
+  align-items: center;
+}
+
+.navToggle {
+  position: absolute;
+  right: 0;
+  display: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 44px;
+  height: 44px;
+  background: #e84545;
+  border-radius: 50%;
+  padding-top: 3px;
+  z-index: 999;
+}
+
+.navToggle > div {
+  width: 18px;
+  height: 3px;
+  background: #fff;
+  margin-bottom: 3px;
+  transform-origin: left center;
+  transition: 0.3s;
+}
+
+.navToggleRotate > div:first-child {
+  transform: rotate(43deg);
+  margin-left: 5px;
+}
+
+.navToggleRotate > div:last-child {
+  transform: rotate(-43deg);
+  margin-left: 5px;
+}
+
+.navToggleRotate > div:nth-child(2) {
+  opacity: 0;
+}
+
+.mobileNavigationContainer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s opacity;
+}
+
+.mobileNavigationContainerOpen {
+  display: flex !important;
+  opacity: 0.9;
+}
+
+.mobileNavigationContainer > ul {
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+}
+
+.mobileNavigationContainer > ul > li {
+  margin-bottom: 30px;
+}
+
+.mobileNavigationContainer > ul > li > a {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.mobileNavigationContainer > ul > li > a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+@media screen and (max-width: $grid-large) {
+  .navigationContainer > ul {
+    display: none;
+  }
+
+  .navToggle {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: $grid-extra-large) {
+  .navigationContainer {
+    width: 90%;
+  }
+
+  .navigationContainer > ul {
+    display: none;
+  }
+
+  .navToggle {
+    display: flex;
+  }
+}
+
+.navigationContainer > ul > li {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+  transition: 0.2s color;
+}
+
+.navigationContainer > ul > li > a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.navigationContainer > ul > li > a {
+  list-style-type: none;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.navigationContainer > ul > li + li {
+  margin-left: 40px;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 100px 105px;
+  text-align: center;
+  height: 750px;
+  background-image: url('../images/banner.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+header > .container > h1 {
+  margin-top: 50px;
+}
+
+header > .container > .btn {
+  margin-top: 80px;
+}
+
+@media screen and (max-width: $grid-medium) {
+  header > .container > h1 {
+    font-size: 41px;
+  }
+
+  header > .container > h3 {
+    font-size: 18px;
+  }
+
+  header {
+    padding: 0 50px;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 18px 39px;
+  background: #E84545;
+  justify-content: normal;
+  align-items: normal;
+  transition: 0.2s background;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background: #E62D2D;
+}

@@ -1,0 +1,62 @@
+@import "breakpoints";
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.4s;
+}
+
+h1 {
+  font-size: 65px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+h4 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #2d3033;
+
+}
+
+h5 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #2d3033;
+}
+
+//menu.scss
+
+//features.scss
+
+//work.scss
+
+// team.scss
+
+// slider.scss
+
+// download.scss
+
+// footer.scss
+

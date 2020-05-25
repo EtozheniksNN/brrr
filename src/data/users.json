@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Nikita Saveliev",
+    "position": "FOUNDER, CEO",
+    "description": "Всегда очень сильно любил искать и сохранять красивые изображения и как-то пришла в голову идея нанять пару знаменитых фотографов и продавать очень красивые фотографии, коих очень мало в интернете. Ведь каждая защищена авторскими правами",
+    "avatar": "./assets/images/founder.jpg",
+    "contacts": [
+      "https://facebookj.com/1",
+      "https://twitter.com/1",
+      "https://linkedin.com/1",
+      "https://google.com/1",
+      "https://dribble.com/1"
+    ]
+  },
+  {
+    "name": "Marina Grin",
+    "position": "CO-FOUNDER, DEVELOPER",
+    "description": "Так получилось, что мы с Никитой оба очень любим фотографию, изображения красивых мест. Я поддержала его идею и вот результат",
+    "avatar": "./assets/images/co-founder-2.jpg",
+    "contacts": [
+      "https://facebook.com/2",
+      "https://twitter.com/2",
+      "https://linkedin.com/2",
+      "https://google.com/2",
+      "https://dribble.com/2"
+    ]
+  }
+]

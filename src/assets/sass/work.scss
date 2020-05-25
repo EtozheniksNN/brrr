@@ -1,0 +1,129 @@
+@import "breakpoints";
+
+.worksContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.workItem {
+  cursor: pointer;
+  width: calc(25% - 1px);
+  height: auto;
+  overflow: hidden;
+  margin: 0.5px;
+  position: relative;
+}
+
+@media screen and (max-width: $grid-large) {
+  .workItem {
+    width: calc(50% - 1px);
+  }
+}
+
+
+@media screen and (max-width: $grid-medium) {
+  .workItem {
+    width: 100%;
+  }
+
+  .workItem > img {
+    width: 100%;
+  }
+}
+
+.workItem > img {
+  transition: 0.4s;
+}
+
+.workItem:hover > img,
+.workItem:hover > .workOverlay {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.workItem:hover > .workOverlay > h5 {
+  margin-top: -15px;
+}
+
+.workItem:hover > .workOverlay > p {
+  margin-top: 5px;
+}
+
+.workOverlay {
+  transition: 0.35s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: rgba(232, 69, 69, 0.9);
+  opacity: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.workOverlay > h5 {
+  position: absolute;
+  margin-top: -60px;
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 5px;
+  transition: 0.4s;
+}
+
+.workOverlay > p {
+  position: absolute;
+  margin-top: 50px;
+  color: #fff;
+  font-size: 11px;
+  transition: 0.4s;
+}
+
+.overlayViewContainer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background: url('../images/fancybox_overlay.png');
+  justify-content: center;
+  align-items: center;
+}
+
+.overlayViewContainerOpen {
+  display: flex;
+}
+
+.overlayViewWindow {
+  position: relative;
+  width: 680px;
+  height: auto;
+  padding: 15px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+#closeOverlayViewWindow {
+  cursor: pointer;
+  $margin-image: -18px;
+  position: absolute;
+  top: $margin-image;
+  right: $margin-image;
+  width: 36px;
+  height: 36px;
+  background: url('../images/fancybox_sprite.png');
+}
+
+@media screen and (max-width: $grid-small) {
+  .overlayViewWindow {
+    width: 300px;
+  }
+
+  .overlayViewWindow > img {
+    width: 100%;
+  }
+}

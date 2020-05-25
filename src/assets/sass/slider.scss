@@ -1,0 +1,121 @@
+@import "breakpoints";
+
+.sliderContainer {
+  background: #53354A;
+  width: 100%;
+}
+
+.sliderContainer > div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.sliderImageContainer {
+  width: 50%;
+  max-height: 475px;
+  overflow: hidden;
+  opacity: 1;
+  transition: 0.4s opacity;
+}
+
+.sliderImageContainer > img {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.sliderClose {
+  opacity: 0 !important;
+}
+
+.sliderInfoContainer {
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 145px;
+}
+
+.sliderInfoContainer > p {
+  color: #fff;
+  font: italic 36px "Cardo", Georgia, "Times New Roman", serif;
+}
+
+.sliderInfoContainer > span {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.sliderNavigation {
+  position: absolute;
+  bottom: 7%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.sliderNavigation > div {
+  $button-size: 11px;
+  width: $button-size;
+  height: $button-size;
+  border-radius: 50%;
+  background: #755D6E;
+  transition: 0.3s background;
+  cursor: pointer;
+}
+
+.sliderNavigation > div:hover {
+  background: #fff;
+}
+
+.sliderNavigation > div + div {
+  margin-left: 12px;
+}
+
+.activeSlide {
+  background: #fff !important;
+}
+
+@media screen and (max-width: $grid-large) {
+  .sliderContainer > div {
+    flex-direction: column;
+  }
+
+  .sliderImageContainer {
+    width: 100%;
+    height: 50%;
+  }
+
+  .sliderInfoContainer {
+    width: 100%;
+    height: 50%;
+    min-height: 200px;
+  }
+}
+
+@media screen and (max-width: $grid-medium) {
+  .sliderInfoContainer {
+    width: 100%;
+    height: 50%;
+    min-height: 400px;
+  }
+}
+
+@media screen and (max-width: $grid-extra-large) {
+  .sliderInfoContainer {
+    padding: 60px 70px 80px 70px;
+  }
+
+  .sliderInfoContainer > p {
+    font-size: 30px;
+  }
+}
